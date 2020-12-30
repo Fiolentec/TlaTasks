@@ -1,0 +1,804 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.15 of Day Month 20?? (rev: eb3ff99)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 62 and seed 609848779334148293 with 6 workers on 12 cores with 1214MB heap and 2730MB offheap memory [pid: 35792] (Mac OS X 10.15.7 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/a18828568/.tlaplus/bakery/bakery.toolbox/Model_1/MC.tla
+Parsing file /Users/a18828568/.tlaplus/bakery/bakery.toolbox/Model_1/bakery.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202004251858/tla2sany/StandardModules/TLC.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202004251858/tla2sany/StandardModules/Naturals.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202004251858/tla2sany/StandardModules/Sequences.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202004251858/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module bakery
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2020-12-30 20:41:09)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2020-12-30 20:41:09.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(19) at 2020-12-30 20:41:12: 702 497 states generated (702 497 s/min), 206 914 distinct states found (206 914 ds/min), 82 559 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ flag = <<FALSE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {}, {}, {}>>
+/\ pc = <<"noncs", "noncs", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <noncs line 59, col 16 to line 61, col 66 of module bakery>
+/\ flag = <<FALSE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {}, {}, {}>>
+/\ pc = <<"noncs", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <noncs line 59, col 16 to line 61, col 66 of module bakery>
+/\ flag = <<FALSE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {}, {}, {}>>
+/\ pc = <<"s1", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <s1 line 63, col 13 to line 68, col 44 of module bakery>
+/\ flag = <<TRUE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"s2", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<TRUE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{3, 4}, {}, {}, {}>>
+/\ pc = <<"s2", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<TRUE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{4}, {}, {}, {}>>
+/\ pc = <<"s2", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<TRUE, FALSE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {}, {}, {}>>
+/\ pc = <<"s2", "s1", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <s1 line 63, col 13 to line 68, col 44 of module bakery>
+/\ flag = <<TRUE, TRUE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {1, 3, 4}, {}, {}>>
+/\ pc = <<"s2", "s2", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<TRUE, TRUE, FALSE, FALSE>>
+/\ num = <<0, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {1, 3, 4}, {}, {}>>
+/\ pc = <<"s3", "s2", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <s3 line 83, col 13 to line 87, col 58 of module bakery>
+/\ flag = <<TRUE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {1, 3, 4}, {}, {}>>
+/\ pc = <<"s4", "s2", "noncs", "noncs">>
+/\ max = <<0, 0, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<TRUE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{}, {3, 4}, {}, {}>>
+/\ pc = <<"s4", "s2", "noncs", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <s4 line 89, col 13 to line 93, col 49 of module bakery>
+/\ flag = <<FALSE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {3, 4}, {}, {}>>
+/\ pc = <<"m1", "s2", "noncs", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {4}, {}, {}>>
+/\ pc = <<"m1", "s2", "noncs", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"m1", "s2", "noncs", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <noncs line 59, col 16 to line 61, col 66 of module bakery>
+/\ flag = <<FALSE, TRUE, FALSE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"m1", "s2", "s1", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <s1 line 63, col 13 to line 68, col 44 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {1, 2, 4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "noncs">>
+/\ max = <<0, 5, 0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {2, 4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "noncs">>
+/\ max = <<0, 5, 5, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "noncs">>
+/\ max = <<0, 5, 5, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <noncs line 59, col 16 to line 61, col 66 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, FALSE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "s1">>
+/\ max = <<0, 5, 5, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <s1 line 63, col 13 to line 68, col 44 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {1, 2, 3}>>
+/\ pc = <<"m1", "s2", "s2", "s2">>
+/\ max = <<0, 5, 5, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {2, 3}>>
+/\ pc = <<"m1", "s2", "s2", "s2">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {3}>>
+/\ pc = <<"m1", "s2", "s2", "s2">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "s2">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {4}, {}>>
+/\ pc = <<"m1", "s2", "s2", "s3">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"m1", "s2", "s2", "s3">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"m1", "s2", "s3", "s3">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <s2 line 70, col 13 to line 81, col 50 of module bakery>
+/\ flag = <<FALSE, TRUE, TRUE, TRUE>>
+/\ num = <<5, 0, 0, 0>>
+/\ nexTread = <<1, 1, 1, 1>>
+/\ wanted = <<{2, 3, 4}, {}, {}, {}>>
+/\ pc = <<"m1", "s3", "s3", "s3">>
+/\ max = <<0, 5, 5, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-12-30 20:42:09
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 50, col 1 to line 50, col 4 of module bakery>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 9 to line 57, col 46 of module bakery: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<noncs line 59, col 1 to line 59, col 11 of module bakery>: 274844:1991119
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 19 to line 59, col 36 of module bakery: 24989729
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 59, col 19 to line 59, col 26 of module bakery: 22998610
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 19 to line 60, col 50 of module bakery: 1991119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 61, col 19 to line 61, col 66 of module bakery: 1991119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<s1 line 63, col 1 to line 63, col 8 of module bakery>: 648769:1604439
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 16 to line 63, col 30 of module bakery: 24603045
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 63, col 16 to line 63, col 23 of module bakery: 22998606
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 16 to line 64, col 51 of module bakery: 1604439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 16 to line 65, col 67 of module bakery: 1604439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 16 to line 66, col 46 of module bakery: 1604439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 16 to line 67, col 47 of module bakery: 1604439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 16 to line 68, col 44 of module bakery: 1604439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<s2 line 70, col 1 to line 70, col 8 of module bakery>: 3336710:14139622
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 16 to line 70, col 30 of module bakery: 31320496
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 70, col 16 to line 70, col 23 of module bakery: 22998602
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 19 to line 71, col 36 of module bakery: 8321894
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 32 to line 73, col 85 of module bakery: 13359724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 35 to line 74, col 52 of module bakery: 13359724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 40 to line 75, col 78 of module bakery: 6085632
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 40 to line 77, col 52 of module bakery: 7274092
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 36 to line 72, col 47 of module bakery: 7541996
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 27 to line 78, col 58 of module bakery: 13359724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 27 to line 79, col 58 of module bakery: 779898
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 27 to line 80, col 53 of module bakery: 779898
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 16 to line 81, col 50 of module bakery: 14139622
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<s3 line 83, col 1 to line 83, col 8 of module bakery>: 652215:1528897
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 16 to line 83, col 30 of module bakery: 23455171
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 83, col 16 to line 83, col 23 of module bakery: 22998586
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 18 to line 85, col 48 of module bakery: 1528897
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 84, col 25 to line 84, col 55 of module bakery: 534584:2063481
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 84, col 42 to line 84, col 54 of module bakery: 2672920
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 84, col 32 to line 84, col 38 of module bakery: 534584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 16 to line 86, col 47 of module bakery: 1528897
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 16 to line 87, col 58 of module bakery: 1528897
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<s4 line 89, col 1 to line 89, col 8 of module bakery>: 703693:1948311
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 16 to line 89, col 30 of module bakery: 24946896
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 16 to line 89, col 23 of module bakery: 22998585
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 16 to line 90, col 52 of module bakery: 1948311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 16 to line 91, col 67 of module bakery: 1948311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 16 to line 92, col 47 of module bakery: 1948311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 16 to line 93, col 49 of module bakery: 1948311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<m1 line 95, col 1 to line 95, col 8 of module bakery>: 1493104:4043095
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 16 to line 95, col 30 of module bakery: 25961640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 95, col 16 to line 95, col 23 of module bakery: 22998584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 19 to line 96, col 36 of module bakery: 4069231
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 29 to line 98, col 69 of module bakery: 3948452
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 98, col 41 to line 98, col 69 of module bakery: 8903275
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 36 to line 97, col 47 of module bakery: 3974588
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 27 to line 99, col 49 of module bakery: 12851727
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 99, col 29 to line 99, col 49 of module bakery: 8903275
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 27 to line 100, col 58 of module bakery: 3948452
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 27 to line 101, col 58 of module bakery: 94643
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 102, col 27 to line 102, col 44 of module bakery: 94643
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 16 to line 103, col 53 of module bakery: 4043095
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<m2 line 105, col 1 to line 105, col 8 of module bakery>: 1016984:3930702
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 16 to line 105, col 30 of module bakery: 26573066
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 105, col 16 to line 105, col 23 of module bakery: 22998584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 19 to line 106, col 41 of module bakery: 7338063
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 106, col 19 to line 106, col 37 of module bakery: 4428331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 23 to line 107, col 51 of module bakery: 664750
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 107, col 23 to line 107, col 31 of module bakery: 4428331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 107, col 33 to line 107, col 51 of module bakery: 4428331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 24 to line 108, col 52 of module bakery: 356220
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 24 to line 108, col 32 of module bakery: 4428331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 34 to line 108, col 52 of module bakery: 4428331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 59 to line 108, col 77 of module bakery: 356220
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 59 to line 108, col 62 of module bakery: 664750
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 108, col 64 to line 108, col 77 of module bakery: 664750
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 16 to line 109, col 82 of module bakery: 3930702
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 110, col 16 to line 110, col 47 of module bakery: 3930702
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 16 to line 111, col 55 of module bakery: 3930702
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<cs line 113, col 1 to line 113, col 8 of module bakery>: 16949:60679
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 16 to line 113, col 30 of module bakery: 23059263
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 113, col 16 to line 113, col 23 of module bakery: 22998584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 16 to line 114, col 19 of module bakery: 60679
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 16 to line 115, col 49 of module bakery: 60679
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 16 to line 116, col 63 of module bakery: 60679
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<exit line 118, col 1 to line 118, col 10 of module bakery>: 12466:40022
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 18 to line 118, col 34 of module bakery: 23038606
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 118, col 18 to line 118, col 25 of module bakery: 22998584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 18 to line 119, col 48 of module bakery: 40022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 18 to line 120, col 52 of module bakery: 40022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 18 to line 121, col 60 of module bakery: 40022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Inv line 148, col 1 to line 148, col 3 of module bakery>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 8 to line 159, col 75 of module bakery: 8155735
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 149, col 14 to line 159, col 75 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 149, col 17 to line 149, col 68 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 149, col 18 to line 149, col 51 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 149, col 58 to line 149, col 67 of module bakery: 15560948
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 150, col 17 to line 150, col 51 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 150, col 18 to line 150, col 39 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 150, col 45 to line 150, col 51 of module bakery: 12362803
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 151, col 17 to line 151, col 51 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 151, col 18 to line 151, col 29 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 151, col 36 to line 151, col 50 of module bakery: 6699964
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 152, col 18 to line 152, col 67 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 152, col 18 to line 152, col 45 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 152, col 50 to line 152, col 67 of module bakery: 24354435
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 153, col 17 to line 154, col 74 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 153, col 18 to line 153, col 39 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 154, col 20 to line 154, col 74 of module bakery: 12771513
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 154, col 59 to line 154, col 74 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 134, col 20 to line 144, col 44 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 134, col 23 to line 134, col 32 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 23 to line 144, col 44 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 26 to line 135, col 58 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 136, col 26 to line 139, col 54 of module bakery: 5511634
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 136, col 29 to line 136, col 56 of module bakery: 5511634
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 137, col 29 to line 137, col 73 of module bakery: 1454187
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 137, col 30 to line 137, col 51 of module bakery: 1454187
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 137, col 58 to line 137, col 72 of module bakery: 1199621
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 138, col 30 to line 139, col 52 of module bakery: 1454187
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 140, col 26 to line 142, col 47 of module bakery: 4057447
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 140, col 29 to line 140, col 40 of module bakery: 4057447
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 141, col 29 to line 142, col 47 of module bakery: 3913584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 141, col 32 to line 141, col 46 of module bakery: 3913584
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 142, col 32 to line 142, col 47 of module bakery: 1464910
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 143, col 26 to line 144, col 44 of module bakery: 143863
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 154, col 70 to line 154, col 70 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 154, col 73 to line 154, col 73 of module bakery: 8054482
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 154, col 29 to line 154, col 55 of module bakery: 12771513
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 155, col 17 to line 158, col 45 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 155, col 17 to line 157, col 44 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 155, col 21 to line 155, col 32 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 156, col 20 to line 157, col 44 of module bakery: 6699964
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 156, col 23 to line 156, col 80 of module bakery: 6699964
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 156, col 24 to line 156, col 45 of module bakery: 6699964
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 156, col 52 to line 156, col 79 of module bakery: 2642608
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 157, col 23 to line 157, col 44 of module bakery: 5664306
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 158, col 20 to line 158, col 45 of module bakery: 1149360
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 159, col 17 to line 159, col 75 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 159, col 18 to line 159, col 29 of module bakery: 32622940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 159, col 35 to line 159, col 75 of module bakery: 94643
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 159, col 60 to line 159, col 75 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 134, col 20 to line 144, col 44 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 134, col 23 to line 134, col 32 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 23 to line 144, col 44 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 26 to line 135, col 58 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 136, col 26 to line 139, col 54 of module bakery: 186085
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 136, col 29 to line 136, col 56 of module bakery: 186085
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 137, col 29 to line 137, col 73 of module bakery: 38990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 137, col 30 to line 137, col 51 of module bakery: 38990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 137, col 58 to line 137, col 72 of module bakery: 28436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 138, col 30 to line 139, col 52 of module bakery: 38990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 140, col 26 to line 142, col 47 of module bakery: 147095
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 140, col 29 to line 140, col 40 of module bakery: 147095
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 141, col 29 to line 142, col 47 of module bakery: 140510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 141, col 32 to line 141, col 46 of module bakery: 140510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 142, col 32 to line 142, col 47 of module bakery: 57370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 143, col 26 to line 144, col 44 of module bakery: 6585
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 159, col 71 to line 159, col 71 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 159, col 74 to line 159, col 74 of module bakery: 283929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 159, col 44 to line 159, col 56 of module bakery: 94643
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 17 to line 148, col 23 of module bakery: 8155735
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(28) at 2020-12-30 20:42:09: 29 286 812 states generated (29 054 857 s/min), 8 155 735 distinct states found (8 091 140 ds/min), 2 406 098 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+29286812 states generated, 8155735 distinct states found, 2406098 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 28.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 13 and the 95th percentile is 3).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 60532ms at (2020-12-30 20:42:09)
+@!@!@ENDMSG 2186 @!@!@
